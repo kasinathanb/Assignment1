@@ -1,0 +1,201 @@
+/* Media query to enable the hamburger */
+@media screen and (max-width:768px) {
+  .frame1 h1 {
+    font-size: 34px;
+  }
+
+  .frame2,
+  .frame5 {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown-menu.hidden {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: flex;
+  }
+}
+
+
+/* Media query for iPad Mini (landscape and portrait) */
+@media screen and (max-width: 768px) {
+
+  nav{
+    padding: 16px;
+  }
+  .frame1 h1{
+    font-size: 20px;
+  }
+
+  .hamburger img{
+    width: 24px;
+  }
+  article {
+    flex-wrap: wrap-reverse;
+    gap: 0px;
+  }
+
+  .frame6 {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .frame6 h1{
+    margin: 0px auto;
+  }
+  .frame6 p{
+    margin: 0px auto 10px auto;
+  }
+  .frame7 {
+    max-width: 100%;
+  }
+
+  .frame7 button {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .green-space {
+    padding: 64px 32px;
+  }
+
+  .about2 {
+    flex-direction: column;
+  }
+
+  .analytic-div {
+    flex-wrap: wrap-reverse;
+    padding: 64px 16px;
+  }
+
+  .analytic-left {
+    width: 100%;
+    text-align: left;
+  }
+
+  .analytic-left h1 {
+    font-size: 36px;
+  }
+
+  .analytic-left p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+
+
+  .start-div {
+    padding: 32px 16px;
+  }
+
+  .features-headsub p {
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 48px 32px;
+  }
+
+  .name {
+    gap: 12px;
+  }
+
+  .name img {
+    width: 48px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: space-between;
+  }
+
+  .footer-sub {
+    gap: 20px;
+    background: #fff;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid #d0d5dd;
+  }
+
+  .footer-sub img {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .footer-sub p {
+    display: none;
+  }
+}
+
+/* Media query for iPhone 13 Mini (portrait mode) */
+@media screen and (max-width: 480px) {
+
+  img {
+    margin: 0px;
+  }
+
+  article {
+    padding: 0px 12px;
+  }
+
+  .frame6 h1 {
+    font-size: 36px;
+}
+
+  .version-controll img {
+    max-width: 100%;
+  }
+
+
+  .green-space{
+    padding:42px 12px;
+  }
+  
+  .card {
+    padding: 12px;
+    min-width: 90%;
+  }
+
+  .right-sub{
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .features{
+    min-width: 100%;
+  }
+
+  .features-head h1{
+    font-size: 30px;
+  }
+
+  .analytic-left h1 {
+    font-size: 24px;
+  }
+
+  .analytic-left p {
+    font-size: 18px;
+  }
+
+  .start-sub {
+    padding: 48px 16px;
+  }
+
+  footer {
+    padding: 48px 16px;
+  }
+
+  .footer-sub {
+    padding: 0 0 12px 0;
+  }
+
+}
