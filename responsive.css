@@ -1,5 +1,6 @@
+
 /* Media query to enable the hamburger */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .frame1 h1 {
     font-size: 34px;
   }
@@ -9,16 +10,29 @@
     display: none;
   }
 
+
   .hamburger {
     display: block;
   }
 
-  .dropdown-menu.hidden {
+  .frame2-opt{
+    padding: 0px 64px;
+  }
+
+  .dropdown-menu .frame2 .frame2-opt:hover{
+    background: #F0FDF9;
+  }
+
+  .menu-toggle:checked ~ .dropdown-menu {
+    display: flex;
+  }
+
+  .menu-toggle:checked ~ .hamburger img.hamburger-open {
     display: none;
   }
 
-  .dropdown-menu {
-    display: flex;
+  .menu-toggle:checked ~ .hamburger img.hamburger-close {
+    display: block;
   }
 }
 
@@ -48,7 +62,7 @@
   }
 
   .frame6 h1{
-    margin: 0px auto;
+    margin: 12px auto;
   }
   .frame6 p{
     margin: 0px auto 10px auto;
@@ -92,7 +106,6 @@
   }
 
 
-
   .start-div {
     padding: 32px 16px;
   }
@@ -101,6 +114,11 @@
     font-size: 20px;
   }
 
+}
+
+
+/* Media query for footer */
+@media screen and (max-width: 768px) {
   footer {
     padding: 48px 32px;
   }
@@ -115,7 +133,7 @@
 
   .footer-top {
     flex-direction: column;
-    gap: 48px;
+    gap: 36px;
     justify-content: space-between;
   }
 
@@ -124,14 +142,50 @@
     background: #fff;
     padding: 0px 0px 20px 0px;
     border-bottom: 1px solid #d0d5dd;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .footer-sub .down-arrow{
+    display: flex;
+  }
+
+  .footer-sub .up-arrow {
+    display: none;
   }
 
   .footer-sub img {
-    display: flex;
     margin-left: auto;
   }
 
-  .footer-sub p {
+  
+
+  .toggle-checkbox {
+    display: none;
+  }
+
+  .toggle-checkbox:checked + .toggle-label .down-arrow {
+    display: none;
+  }
+
+  .toggle-checkbox:checked + .toggle-label .up-arrow {
+    display: inline;
+  }
+
+  .toggle-checkbox:checked + .toggle-label + .toggle-content p {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  .toggle-content P:hover{
+    background: #F0FDF9;
+    color: #107569;
+  }
+
+
+  .toggle-content p {
     display: none;
   }
 }

@@ -16,6 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background: white;
 }
 
 .frame1 {
@@ -88,22 +89,29 @@ nav {
 .dropdown-menu {
   display: none;
   flex-direction: column;
-  gap: 20px;
+  transition: 0.3s ease all;
   position: absolute;
+  justify-content: center;
   top: 72px;
   right: 0;
-  width: 100%;
+  min-width: 100%;
   background: white;
+  padding: 0px;
   border: 1px solid #d0d5dd;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu .frame2,
-.dropdown-menu .frame5 {
+
+
+.dropdown-menu .frame2 {
+  display: flex;
+  gap: 0px;  
   flex-direction: column;
-  gap: 20px;
+
+}
+
+
+.menu-toggle {
+  display: none;
 }
 
 
@@ -122,6 +130,9 @@ article {
   margin: auto;
 }
 
+.frame7 button:hover{
+  background: #0E9384;
+}
 .frame6 {
   gap: 24px;
   width: 576px;
@@ -149,6 +160,7 @@ article {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  transition: 0.3s ease all;
   color: #ffff;
 }
 
@@ -417,6 +429,8 @@ article {
   font-size: 18px;
 }
 
+
+
 footer {
   padding: 64px 120px;
   border-top: 1px solid #475467;
@@ -425,6 +439,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 64px;
+}
+
+footer .toggle-checkbox{
+  display: none;
 }
 
 .footer-top {
@@ -469,6 +487,12 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .socials {

@@ -32,25 +32,34 @@
       <p>Login</p>
       <button>Sign up</button>
     </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <div class="hamburger">
-      <img src="./assets/hamburger.svg" alt="Hamburger Menu" class="hamburger-open" />
-      <img src="./assets/x-hamburger.svg" alt="Close Menu" class="hamburger-close hidden" />
+      <label for="menu-toggle">
+        <img src="./assets/hamburger.svg" alt="Hamburger Menu" class="hamburger-open" />
+        <img src="./assets/x-hamburger.svg" alt="Close Menu" class="hamburger-close hidden" />
+      </label>
     </div>
-    <div class="dropdown-menu hidden">
-      <div class="hidden-menu">
-        <div class="frame2">
+    <div class="dropdown-menu">
+      <div class="frame2">
+        <div class="frame2-opt">
           <p>Home</p>
-          <p>About</p>
-          <p>Why Sales Slayer</p>
-          <p>Pricing</p>
         </div>
-        <div class="frame5">
-          <p>Login</p>
-          <button>Sign up</button>
+        <div class="frame2-opt">
+          <p>About</p>
+
+        </div>
+        <div class="frame2-opt">
+          <p>Why Sales Slayer</p>
+
+        </div>
+        <div class="frame2-opt">
+          <p>Pricing</p>
         </div>
       </div>
     </div>
   </nav>
+
+
   <!-- End of navbar -->
   <!-- First component -->
   <article>
@@ -137,7 +146,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </main>
   <!-- End of about section -->
@@ -190,8 +199,8 @@
                 intervention.</p>
             </div>
           </div>
-        <!-- Ed of the first card container -->
-        <!-- Second card container -->
+          <!-- Ed of the first card container -->
+          <!-- Second card container -->
           <div class="card">
             <div class="icon-container">
               <img src="./assets/logo.svg" />
@@ -248,67 +257,101 @@
       <button>Try it for free</button>
     </div>
   </main>
-    <footer>
-      <div class="footer-top">
-        <div class="name">
-          <img src="./assets/navbarimg.svg" />
-          <span>Sales Layer</span>
-        </div>
-        <div class="footer-sub">
+  <footer>
+    <div class="footer-top">
+      <div class="name">
+        <img src="./assets/navbarimg.svg" />
+        <span>Sales Layer</span>
+      </div>
+  
+      <!-- Company Section -->
+      <div class="footer-sub">
+        <input type="checkbox" id="toggle-company" class="toggle-checkbox">
+        <label for="toggle-company" class="toggle-label">
           <span>Company</span>
+          <img src="./assets/up-arrow.svg" alt="up arrow-vector" class="up-arrow"/>
+          <img src="./assets/down-arrow.svg" alt="down arrow-vector" class="down-arrow" />
+        </label>
+        <div class="toggle-content" id="company-content">
           <p>Meet Us</p>
           <p>Jobs</p>
           <p>Blog</p>
           <p>Talk to us</p>
-          <img src="./assets/down-arrow.svg" alt="down arrow-vector"/>
         </div>
-        <div class="footer-sub">
+      </div>
+  
+      <!-- Sales Layer Section -->
+      <div class="footer-sub">
+        <input type="checkbox" id="toggle-saleslayer" class="toggle-checkbox">
+        <label for="toggle-saleslayer" class="toggle-label">
           <span>Sales Layer</span>
+          <img src="./assets/up-arrow.svg" alt="up arrow-vector" class="up-arrow"/>
+          <img src="./assets/down-arrow.svg" alt="down arrow-vector" class="down-arrow" />
+        </label>
+        <div class="toggle-content" id="saleslayer-content">
           <p>Dashboard</p>
           <p>Multi-Channel</p>
           <p>Pricing</p>
           <p>Our services</p>
           <p>Connect</p>
-          <img src="./assets/down-arrow.svg" alt="down arrow-vector"/>
         </div>
-        <div class="footer-sub">
+      </div>
+  
+      <!-- Resources Section -->
+      <div class="footer-sub">
+        <input type="checkbox" id="toggle-resources" class="toggle-checkbox">
+        <label for="toggle-resources" class="toggle-label">
           <span>Resources</span>
+          <img src="./assets/up-arrow.svg" alt="up arrow-vector" class="up-arrow"/>
+          <img src="./assets/down-arrow.svg" alt="down arrow-vector" class="down-arrow" />
+        </label>
+        <div class="toggle-content" id="resources-content">
           <p>Case Studies</p>
           <p>E-Books</p>
           <p>Webinar</p>
           <p>Assets</p>
-          <img src="./assets/down-arrow.svg" alt="down arrow-vector"/>
         </div>
-        <div class="footer-sub">
+      </div>
+  
+      <!-- Support Section -->
+      <div class="footer-sub">
+        <input type="checkbox" id="toggle-support" class="toggle-checkbox">
+        <label for="toggle-support" class="toggle-label">
           <span>Support</span>
+          <img src="./assets/up-arrow.svg" alt="up arrow-vector" class="up-arrow"/>
+          <img src="./assets/down-arrow.svg" alt="down arrow-vector" class="down-arrow" />
+        </label>
+        <div class="toggle-content" id="support-content">
           <p>Help Center</p>
           <p>Legal notice</p>
           <p>Privacy policy</p>
           <p>Cookies policy</p>
           <p>Cookies settings</p>
           <p>Sales terms</p>
-          <img src="./assets/down-arrow.svg" alt="down arrow-vector"/>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="copyright">
-          <p>© 2024 Sales Layer Rights Reserved.</p>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© 2024 Sales Layer Rights Reserved.</p>
+      </div>
+      <div class="socials">
+        <div class="socials-icon">
+          <img src="./assets/facebook.svg" alt="facebook" />
         </div>
-        <div class="socials">
-          <div class="socials-icon">
-            <img src="./assets/facebook.svg" alt="facebook"/>
-          </div>
-          <div class="socials-icon">
-            <img src="./assets/x.svg" alt="x" />
-          </div>
-          <div class="socials-icon">
-            <img src="./assets/linkedin.svg" alt="linkedin" />
-          </div>
-          <div class="socials-icon">
-            <img src="./assets/ig.svg" alt="instagram"/>
-          </div>
+        <div class="socials-icon">
+          <img src="./assets/x.svg" alt="x" />
+        </div>
+        <div class="socials-icon">
+          <img src="./assets/linkedin.svg" alt="linkedin" />
+        </div>
+        <div class="socials-icon">
+          <img src="./assets/ig.svg" alt="instagram" />
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  
 </body>
 </html>
