@@ -96,6 +96,7 @@ nav {
   background: white;
   padding: 0px;
   border: 1px solid #d0d5dd;
+  
 }
 
 
@@ -120,7 +121,7 @@ article {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 32px;
+  padding: 96px 32px;
 }
 
 .frame7 {
@@ -133,7 +134,7 @@ article {
 }
 .frame6 {
   gap: 24px;
-  width: 576px;
+  max-width: 576px;
 }
 
 .frame6 h1 {
@@ -274,14 +275,14 @@ article {
   margin: auto;
   width: auto;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 0px;
   gap: 64px;
   background: #125d56;
 }
 
 .green-sub {
   margin: auto;
-  max-width: 1280px;
+  padding: 0px 80px;
 }
 
 .features-head {
@@ -321,12 +322,11 @@ article {
   flex-wrap: wrap;
   gap: 32px;
   flex-grow: 1;
-  margin-bottom: 32px;
   justify-content: center;
 }
 
 .card {
-  max-width:272px;
+  max-width:346px;
   background: #ffffff;
   flex-grow: 1;
   display: flex;

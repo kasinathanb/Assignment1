@@ -40,7 +40,6 @@
   }
 }
 
-
 /* Media query for iPad Mini (landscape and portrait) */
 @media screen and (max-width: 768px) {
 
@@ -54,6 +53,7 @@
   .hamburger img{
     width: 24px;
   }
+  
   article {
     flex-wrap: wrap-reverse;
     gap: 0px;
@@ -68,9 +68,11 @@
   .frame6 h1{
     margin: 12px auto;
   }
+
   .frame6 p{
     margin: 0px auto 10px auto;
   }
+
   .frame7 {
     max-width: 100%;
   }
@@ -148,9 +150,11 @@
     border-bottom: 1px solid #d0d5dd;
     display: flex;
     flex-direction: column;
-
   }
 
+  .footer-sub:last    -child{
+    border-bottom: none;
+  }
   .footer-sub .down-arrow{
     display: flex;
   }
@@ -191,6 +195,10 @@
 
   .toggle-content p {
     display: none;
+  }
+
+  .card{
+    max-width:200px;
   }
 }
 
