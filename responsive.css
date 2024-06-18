@@ -1,6 +1,10 @@
 
 /* Media query to enable the hamburger */
 @media screen and (max-width: 768px) {
+
+  img{
+    max-width: 100%;
+  }
   .frame1 h1 {
     font-size: 34px;
   }
