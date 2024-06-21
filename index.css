@@ -455,6 +455,9 @@ footer .footer-menu .footer-menu-sub .toggle-checkbox {
   display: none;
 }
 footer .footer-menu .footer-menu-sub .toggle-label {
+  display: flex;
+}
+footer .footer-menu .footer-menu-sub .toggle-label img {
   display: none;
 }
 footer .footer-menu .footer-menu-sub ul {
@@ -478,7 +481,6 @@ footer .footer-menu .footer-menu-sub ul li {
   line-height: 24px;
   transition: 0.2s ease all;
   margin-top: 16px;
-  padding: 6px 12px;
 }
 footer .footer-bottom-container {
   padding: 31px 32px;
@@ -486,6 +488,7 @@ footer .footer-bottom-container {
   width: 100%;
 }
 footer .footer-bottom-container .footer-copy-right p {
+  font-family: montserrat;
   margin: 0;
 }
 footer .footer-bottom-container .footer-bottom-sub-container {
