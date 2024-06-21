@@ -1,360 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="responsive.css">
+
+<head>
+  <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="responssive.css" />
   <title>Figma</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="frame1">
-      <div class="logo">
-        <img src="./assets/navbarimg.svg" alt="Sales Layer Logo" />
-        <h1>Sales Layer</h1>
-      </div>
-      <div class="frame2">
-        <p>Home</p>
-        <p>About</p>
-        <p>Why Sales Slayer</p>
-        <p>Pricing</p>
-      </div>
-    </div>
-    <div class="frame5">
-      <p>Login</p>
-      <button aria-label="Sign up">Sign up</button>
-    </div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <div class="hamburger">
-      <label for="menu-toggle">
-        <img src="./assets/hamburger.svg" alt="Open Menu" class="hamburger-open" />
-        <img src="./assets/x-hamburger.svg" alt="Close Menu" class="hamburger-close hidden" />
-      </label>
-    </div>
-    <div class="dropdown-menu">
-      <div class="frame2">
-        <div class="frame2-opt">
-          <p>Home</p>
+  <!-- Header Container-->
+  <header class="header-container">
+    <div class="header-sub-container">
+    <!-- Header left container -->
+      <div class="header-left-container">
+        <!-- Logo container -->
+        <div class="logo-container">
+          <img src="./assets/navbarimg.svg" alt="Navbar logo" class="header-logo" />
+          <h1 class="logo-heading">Sales Layer</h1>
         </div>
-        <div class="frame2-opt">
-          <p>About</p>
-        </div>
-        <div class="frame2-opt">
-          <p>Why Sales Slayer</p>
-        </div>
-        <div class="frame2-opt">
-          <p>Pricing</p>
+        <!-- Menu container -->
+        <div class="manu-container">
+          <ul class="menu-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Why Sales Layer</li>
+            <li>Pricing</li>
+          </ul>
         </div>
       </div>
+      <!-- Header right container -->
+      <div class="header-right-btn-container">
+        <button id="login" class="btn">Login</button>
+        <button id="sign-up" class="btn">SignUp</button>
+      </div>
+      <!-- Hamburger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <div class="hamburger">
+        <label for="menu-toggle">
+          <img src="./assets/hamburger.svg" alt="hamburger-open" class="hamburger-open" />
+          <img src="./assets/x-hamburger.svg" alt="hamburger-close" class="hamburger-close" />
+        </label>
+      </div>
+      <div class="dropdown-menu">
+        <div class="menu-items">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Why Sales Layer</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </nav>
-  <!-- End of navbar -->
-
-  <!-- First component -->
-  <article>
-    <div class="frame7">
-      <div class="frame6">
-        <h1>SKU Management</h1>
-        <img src="./assets/arrow-vector.svg" alt="Arrow Vector" />
-        <p>
+  </header>
+  <!-- Intro -->
+  <main class="intro">
+    <div class="intro-left-container">
+      <div class="intro-heading-container">
+        <h1 class="intro-heading">SKU Management</h1>
+        <img src="./assets/arrow-vector.png" alt="Arrow image" class="arrow-vector" />
+        <p class="intro-paragraph">
           Centralize and manage millions of SKUs with Sales Layer PIM to
           improve the efficiency of your business.
         </p>
       </div>
-      <button aria-label="Try it for free">Try it for free</button>
+      <button class="btn" id="intro-btn">Try it for free</button>
     </div>
-    <div class="version-controll">
-      <img src="./assets/mockup1.svg" alt="Mockup of SKU Management System" />
+    <div class="intro-right-container">
+      <img src="./assets/mockup1.svg" alt="Version controll Bro" />
     </div>
-  </article>
-  <!-- End of first component -->
-
-  <!-- About section -->
-  <main class="About">
-    <div class="frame25">
-      <div class="heading">
-        <p>Who we are</p>
+  </main>
+  <!-- End of intro -->
+  <main class="about-container">
+    <div class="about-top-container">
+      <div class="about-head-container">
+        <span>Who we are</span>
         <h1>About Us</h1>
       </div>
       <p>Dedicated to Revolutionizing Inventory Management</p>
     </div>
-    <div class="about2">
-      <div class="bro-ctn">
-        <img src="./assets/creator-bro.svg" alt="Illustration of a content creator" />
+    <div class="about-bottom-container">
+      <div class="about-bottom-left-container">
+        <div class="thunder-container">
+          <img src="./assets/creator-bro.svg" alt="Developer bro" />
+        </div>
       </div>
-      <div class="right">
-        <div class="right-sub">
-          <div class="features">
-            <div class="thunder">
-              <img src="./assets/thunder.svg" alt="Thunder Icon" />
+      <div class="about-bottom-right-container">
+        <div class="about-card-container">
+          <div class="about-card">
+            <div class="thunder-container">
+              <img src="./assets/thunder.svg" alt="Thunder" />
             </div>
-            <div class="fetures-text">
-              <h1>Our Mission</h1>
-              <p>
-                We aim to provide top-notch SKU management solutions that
-                streamline inventory processes and enhance productivity.
-              </p>
-            </div>
+            <h2>Our Mission</h2>
+            <p>
+              We aim to provide top-notch SKU management solutions that
+              streamline inventory processes and enhance productivity.
+            </p>
           </div>
-          <div class="features">
-            <div class="thunder">
-              <img src="./assets/thunder.svg" alt="Thunder Icon" />
+          <div class="about-card">
+            <div class="thunder-container">
+              <img src="./assets/thunder.svg" alt="Thunder" />
             </div>
-            <div class="fetures-text">
-              <h1>Our Vision</h1>
-              <p>
-                We envision a world where inventory management is effortless,
-                efficient, and accessible to businesses of all sizes.
-              </p>
-            </div>
+            <h2>Our Mission</h2>
+            <p>
+              We envision a world where inventory management is effortless,
+              efficient, and accessible to businesses of all sizes.
+            </p>
           </div>
         </div>
-        <div class="right-sub">
-          <div class="features">
-            <div class="thunder">
-              <img src="./assets/thunder.svg" alt="Thunder Icon" />
+        <div class="about-card-container">
+          <div class="about-card">
+            <div class="thunder-container">
+              <img src="./assets/thunder.svg" alt="Thunder" />
             </div>
-            <div class="fetures-text">
-              <h1>Our Values</h1>
-              <p>
-                Our core values of innovation, customer focus, and integrity
-                guide everything we do, ensuring exceptional service.
-              </p>
-            </div>
+            <h2>Our Mission</h2>
+            <p>
+              Our core values of innovation, customer focus, and integrity
+              guide everything we do, ensuring exceptional service.
+            </p>
           </div>
-          <div class="features">
-            <div class="thunder">
-              <img src="./assets/thunder.svg" alt="Thunder Icon" />
+          <div class="about-card">
+            <div class="thunder-container">
+              <img src="./assets/thunder.svg" alt="Thunder" />
             </div>
-            <div class="fetures-text">
-              <h1>Our Commitment</h1>
-              <p>
-                We are dedicated to helping our clients achieve their goals by
-                providing reliable, user-friendly, and scalable solutions.
-              </p>
-            </div>
+            <h2>Our Mission</h2>
+            <p>
+              We are dedicated to helping our clients achieve their goals by
+              providing reliable, user-friendly, and scalable solutions.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <!-- End of about section -->
-
-  <!-- Green space section -->
-  <main>
-    <div class="green-space">
-      <div class="green-sub">
-        <!-- Features heading -->
-        <div class="features-head">
-          <p id="heading">Features</p>
-          <h1>Optimize Your Inventory With Smart SKU Management</h1>
-        </div>
-        <!-- End of the heading div -->
-
-        <!-- Sub heading -->
-        <div class="fetures-headsub">
+  <!-- Features Section -->
+  <main class="features-container">
+    <div class="features-sub-container">
+      <div class="features-top-container">
+        <span>Features</span>
+        <h2>Optimize Your Inventory with Smart SKU Management</h2>
+        <p>
+          Efficiently Track, Manage, and Optimize Your Inventory for Maximum
+          Productivity
+        </p>
+      </div>
+      <div class="features-card-container">
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
+          </div>
+          <h2>Comprehensive SKU Tracking</h2>
           <p>
-            Efficiently Track, Manage, and Optimize Your Inventory for Maximum
-            Productivity
+            Keep a detailed record of all your products to ensure accurate
+            tracking and inventory management.
           </p>
         </div>
-        <!-- End of the sub heading -->
-
-        <!-- Card container -->
-        <div class="card-container">
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>Comprehensive SKU Tracking</h1>
-              <p>Keep a detailed record of all your products to ensure accurate tracking and inventory management.</p>
-            </div>
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
           </div>
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>Real-Time Inventory Updates</h1>
-              <p>Receive real-time updates on inventory levels, ensuring you never run out of stock or overstock items.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>Automated Stock Replenishment</h1>
-              <p>Set thresholds and automate reorder processes to maintain optimal inventory levels without manual
-                intervention.</p>
-            </div>
-          </div>
-          <!-- End of the first card container -->
-
-          <!-- Second card container -->
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>Advanced Reporting & Analytics</h1>
-              <p>Access comprehensive reports and analytic trends and optimize your stock management strategy.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>Multi-Channel Integration</h1>
-              <p>Integrate your SKU management system with channels to ensure consistent inventory levels across all
-                platforms.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="icon-container">
-              <img src="./assets/logo.svg" alt="Sales Layer Logo" />
-            </div>
-            <div>
-              <h1>User-Friendly Interface</h1>
-              <p>Enjoy a clean and intuitive interface that simplifies SKU management and makes it accessible for users
-                of all skill levels.</p>
-            </div>
-          </div>
+          <h2>Receive real-time updates</h2>
+          <p>
+            Receive real-time updates on inventory levels, ensuring you never
+            run out of stock or overstock items.
+          </p>
         </div>
-        <!-- End of the second card container -->
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
+          </div>
+          <h2>Automated Stock Replenishment</h2>
+          <p>
+            Set thresholds and automate reorder processes to maintain optimal
+            inventory levels without manual intervention.
+          </p>
+        </div>
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
+          </div>
+          <h2>Advanced Reporting & Analytics</h2>
+          <p>
+            Access comprehensive reports and analytic trends and optimize your
+            stock management strategy.
+          </p>
+        </div>
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
+          </div>
+          <h2>Multi-Channel Integration</h2>
+          <p>
+            Integrate your SKU management system with channels to ensure
+            consistent inventory levels across all platforms.
+          </p>
+        </div>
+        <div class="features-card">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="drive-logo" />
+          </div>
+          <h2>User-Friendly Interface</h2>
+          <p>
+            Enjoy a clean and intuitive interface that simplifies SKU
+            management and makes it accessible for users of all skill levels.
+          </p>
+        </div>
       </div>
     </div>
   </main>
-  <!-- End of the green space -->
-
-  <!-- Analytics section -->
-  <main class="analytic-div">
-    <div class="analytic-left">
+  <!-- Analytic Container -->
+  <main class="analytic-container">
+    <div class="analytic-left-container">
       <h1>Analytic Tools for SKU Management</h1>
-      <p>With <span>product analytic tools</span>, you can also monitor the success of your products across your selling
-        platforms and identify any trends to capitalize on. PIM allows you to input and launch new product data in no
-        time at all.</p>
+      <p>
+        With <span> product analytic tools</span>, you can also monitor the
+        success of your products across your selling platforms and identify
+        any trends to capitalize on. PIM allows you to input and launch new
+        product data in no time at all.
+      </p>
     </div>
-    <div class="analytic-right">
-      <img src="./assets/devloper-activity-bro.svg" alt="Developer activity illustration" />
+    <div class="analytic-right-container">
+      <img src="./assets/devloper-activity-bro.svg" alt="Developer Bro" />
+    </div>
+    <div></div>
+  </main>
+
+  <!-- Starting for free container -->
+  <main>
+    <div class="start-free-container">
+      <div class="start-free-sub-container">
+        <div class="start-free-last-sub-container">
+          <div class="start-free-head-container">
+            <h1>Get started for free now</h1>
+            <p>Transform your data into product intelligence</p>
+          </div>
+          <div class="start-free-button-container">
+            <button class="btn" id="free">Try it for free</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
-  <!-- End of analytics section -->
 
-  <!-- Start section -->
-  <main class="start-div">
-    <div class="start-sub">
-      <h1>Get started for free</h1>
-      <p>Transform your data into product intelligence</p>
-      <button aria-label="Try it for free">Try it for free</button>
-    </div>
-  </main>
-  <!-- End of start section -->
-
-  <!-- Footer -->
   <footer>
-    <div class="footer-top">
-      <div class="name">
-        <img src="./assets/navbarimg.svg" alt="Sales Layer Logo" />
-        <span>Sales Layer</span>
-      </div>
-  
-      <!-- Company Section -->
-      <div class="footer-sub">
-        <input type="checkbox" id="toggle-company" class="toggle-checkbox">
-        <label for="toggle-company" class="toggle-label">
-          <span>Company</span>
-          <img src="./assets/up-arrow.svg" alt="Expand Company Section" class="up-arrow"/>
-          <img src="./assets/down-arrow.svg" alt="Collapse Company Section" class="down-arrow" />
-        </label>
-        <div class="toggle-content" id="company-content">
-          <p>Meet Us</p>
-          <p>Jobs</p>
-          <p>Blog</p>
-          <p>Talk to us</p>
+    <div class="footer-sub">
+      <div class="footer-top-container">
+        <div class="logo-container">
+          <img src="./assets/navbarimg.svg" alt="logo-vector" />
+          <h1>Sales Layer</h1>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-sub">
+            <input type="checkbox" id="toggle-company" class="toggle-checkbox"/>
+            <label for="toggle-company" class="toggle-label">
+              <span>Company</span>
+              <img src="./assets/up-arrow.svg" class="up-arrow" />
+              <img src="./assets/down-arrow.svg" class="down-arrow" />
+            </label>
+            <ul>
+              <li>Meet us</li>
+              <li>Jobs</li>
+              <li>Blogs</li>
+              <li>Talk to us</li>
+            </ul>
+          </div>
+          <div class="footer-menu-sub">
+            <input type="checkbox" id="toggle-sales-layer" class="toggle-checkbox"/>
+            <label for="toggle-sales-layer" class="toggle-label">
+              <span>Sales Layer</span>
+              <img src="./assets/up-arrow.svg" class="up-arrow" />
+              <img src="./assets/down-arrow.svg" class="down-arrow" />
+            </label>
+            <ul>
+              <li>Dashboard</li>
+              <li>Multi-channel</li>
+              <li>Analytics</li>
+              <li>Pricing</li>
+              <li>Our services</li>
+              <li>Connect</li>
+            </ul>
+          </div>
+          <div class="footer-menu-sub">
+            <input type="checkbox" id="toggle-resources" class="toggle-checkbox"/>
+            <label for="toggle-resources" class="toggle-label">
+              <span>Resources</span>
+              <img src="./assets/up-arrow.svg" class="up-arrow" />
+              <img src="./assets/down-arrow.svg" class="down-arrow" />
+            </label>
+            <ul>
+              <li>Case Studies</li>
+              <li>E-books</li>
+              <li>Webinars</li>
+              <li>Assets</li>
+            </ul>
+          </div>
+          <div class="footer-menu-sub">
+            <input type="checkbox" id="toggle-support" class="toggle-checkbox"/>
+            <label for="toggle-support" class="toggle-label">
+              <span>Support</span>
+              <img src="./assets/up-arrow.svg" class="up-arrow" />
+              <img src="./assets/down-arrow.svg" class="down-arrow" />
+            </label>
+            <ul>
+              <li>Help Center</li>
+              <li>Legal notice</li>
+              <li>Privacy policy</li>
+              <li>Cookies policy</li>
+              <li>Cookies settings</li>
+              <li>Sales terms</li>
+            </ul>
+          </div>
         </div>
       </div>
-  
-      <!-- Sales Layer Section -->
-      <div class="footer-sub">
-        <input type="checkbox" id="toggle-saleslayer" class="toggle-checkbox">
-        <label for="toggle-saleslayer" class="toggle-label">
-          <span>Sales Layer</span>
-          <img src="./assets/up-arrow.svg" alt="Expand Sales Layer Section" class="up-arrow"/>
-          <img src="./assets/down-arrow.svg" alt="Collapse Sales Layer Section" class="down-arrow" />
-        </label>
-        <div class="toggle-content" id="saleslayer-content">
-          <p>Dashboard</p>
-          <p>Multi-Channel</p>
-          <p>Pricing</p>
-          <p>Our services</p>
-          <p>Connect</p>
-        </div>
-      </div>
-  
-      <!-- Resources Section -->
-      <div class="footer-sub">
-        <input type="checkbox" id="toggle-resources" class="toggle-checkbox">
-        <label for="toggle-resources" class="toggle-label">
-          <span>Resources</span>
-          <img src="./assets/up-arrow.svg" alt="Expand Resources Section" class="up-arrow"/>
-          <img src="./assets/down-arrow.svg" alt="Collapse Resources Section" class="down-arrow" />
-        </label>
-        <div class="toggle-content" id="resources-content">
-          <p>Case Studies</p>
-          <p>E-Books</p>
-          <p>Webinar</p>
-          <p>Assets</p>
-        </div>
-      </div>
-  
-      <!-- Support Section -->
-      <div class="footer-sub">
-        <input type="checkbox" id="toggle-support" class="toggle-checkbox">
-        <label for="toggle-support" class="toggle-label">
-          <span>Support</span>
-          <img src="./assets/up-arrow.svg" alt="Expand Support Section" class="up-arrow"/>
-          <img src="./assets/down-arrow.svg" alt="Collapse Support Section" class="down-arrow" />
-        </label>
-        <div class="toggle-content" id="support-content">
-          <p>Help Center</p>
-          <p>Legal notice</p>
-          <p>Privacy policy</p>
-          <p>Cookies policy</p>
-          <p>Cookies settings</p>
-          <p>Sales terms</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <div class="copyright">
-        <p> &copy; 2024 Sales Layer Rights Reserved.</p>
-      </div>
-      <div class="socials">
-        <div class="socials-icon">
-          <img src="./assets/facebook.svg" alt="Facebook icon" />
-        </div>
-        <div class="socials-icon">
-          <img src="./assets/x.svg" alt="X (Twitter) icon" />
-        </div>
-        <div class="socials-icon">
-          <img src="./assets/linkedin.svg" alt="LinkedIn icon" />
-        </div>
-        <div class="socials-icon">
-          <img src="./assets/ig.svg" alt="Instagram icon" />
+      <div class="footer-bottom-container">
+        <div class="footer-bottom-sub-container">
+          <div class="footer-copy-right">
+            <p>&copy; 2024 Sales Layer Rights Reserved.</p>
+          </div>
+          <div class="social-icon-container">
+            <div class="social-icon">
+              <img src="./assets/facebook.svg" alt="facebook" />
+            </div>
+            <div class="social-icon">
+              <img src="./assets/x.svg" alt="Twitter" />
+            </div>
+            <div class="social-icon">
+              <img src="./assets/linkedin.svg" alt="linkedin" />
+            </div>
+            <div class="social-icon">
+              <img src="./assets/ig.svg" alt="Instagram" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
-  <!-- End of footer -->
+   
+  
 </body>
 </html>
