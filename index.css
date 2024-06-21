@@ -39,6 +39,7 @@ img {
 
 .btn:hover {
   cursor: pointer;
+  background: #0E9384;
 }
 
 li:hover {
