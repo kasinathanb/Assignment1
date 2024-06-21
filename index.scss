@@ -47,12 +47,16 @@ img {
     font-size: 18px;
     line-height: 28px;
   }
+
+  &:hover{
+    cursor: pointer;
+    background: #0E9384;
+  }
 }
 
-.btn:hover {
-  cursor: pointer;
-  background: #0E9384;
-}
+
+
+
 
 li:hover {
   cursor: pointer;
