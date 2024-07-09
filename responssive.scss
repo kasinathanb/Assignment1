@@ -235,13 +235,16 @@ $light-color: #fff;
                     max-width: 1024px;
                     width: 100%;
 
-                    &:last-child .toggle-label{
+                    &:last-child .toggle-label {
                         border-bottom: none;
                     }
 
                     .toggle-checkbox {
                         display: none;
                     }
+
+
+
 
                     .toggle-label {
                         display: flex;
@@ -252,8 +255,10 @@ $light-color: #fff;
                         cursor: pointer;
                         padding: 0 0 20px 0;
                         border-bottom: 0.5px solid #D0D5DD;
-
-
+                        
+                        img{
+                            display: block;
+                          }
 
                         .up-arrow {
                             display: none;

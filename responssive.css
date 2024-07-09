@@ -194,6 +194,9 @@
     padding: 0 0 20px 0;
     border-bottom: 0.5px solid #D0D5DD;
   }
+  footer .footer-sub .footer-menu .footer-menu-sub .toggle-label img {
+    display: block;
+  }
   footer .footer-sub .footer-menu .footer-menu-sub .toggle-label .up-arrow {
     display: none;
   }
